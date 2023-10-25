@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>OJ site</title>
+</head>
+<body>
+
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">OJ</div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">О нас</a>
+                <a class="nav__link" href="#" data-scroll="#services">Персонал</a>
+                <a class="nav__link" href="#" data-scroll="#works">Работы</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Контакты</a>
+                <a class="nav__link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a class="nav__link" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Меню</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div class="page">
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">Креативный отдел</h2>
+                <h1 class="intro__title">мы - OJ сервис</h1>
+
+                <a class="btn" href="#">Узнать больше</a>
+            </div>
+        </div>
+
+    </div><!-- /.intro -->
+
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Что мы делаем?</h3>
+                <h2 class="section__title">немного о нас</h2>
+                <div class="section__text">
+                    <p> Мы - команда креативных людей, разбирающихся во многих сферах искусства, начиная с возможности нарисовать вам дизайн и заканчивая способностью написать вам мелодичную композицию.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/1.jpg" alt="">
+                        </div>
+                        <div class="card__text">Делаем дизайн</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/2.jpg" alt="">
+                        </div>
+                        <div class="card__text">Пишем статьи</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/3.jpg" alt="">
+                        </div>
+                        <div class="card__text">сочиняем музыку</div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- Statistics -->
+    <div class="statistics">
+        <div class="container">
+
+            <div class="stat">
+                <div class="stat__item">
+                    <div class="stat__count">42</div>
+                    <div class="stat__text">Созданных дизайна</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">123</div>
+                    <div class="stat__text">Довольных клиентов</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">8</div>
+                    <div class="stat__text">квалифицированных сотрудников</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">99</div>
+                    <div class="stat__text">кружек кофе</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">24</div>
+                    <div class="stat__text">участника</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Wedo -->
+    <section class="section" id="services">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Сервис</h3>
+                <h2 class="section__title">Что мы можем?</h2>
+                <div class="section__text">
+                    <p>Нам вы можете поручить почти любую творческую работу. Даже написать книгу или анекдот. Мы способны на все, пока у вас есть чем нам заплатить</p>
+                </div>
+            </div>
+
+            <div class="wedo">
+                <div class="wedo__item">
+                    <img class="wedo__img" src="assets/images/wedo.jpg" alt="">
+                </div>
+
+                <div class="wedo__item">
+
+                    <div class="accordion">
+                        <div class="accordion__item" data-collapse="#wedo_1">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/photography.png" alt="">
+                                <div class="accordion__title">Фотографируем</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_1">
+                                <p>Проведение фотосессий и редактирование имеющегося контента это лишь малая часть того, что мы можем сделать. Портретная съемка, пейзажная съемка, операторская работа - это все мы.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item active" data-collapse="#wedo_2">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/creativity.png" alt="">
+                                <div class="accordion__title">Нестандартный подход</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_2">
+                                <p>У каждого члена команды свой взгляд на проблему, если вы не можете смириться с решением одного из наших сотрудников, вы всегда сможете проконсультироваться с другим, чтобы узнать его мнение.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-collapse="#wedo_3">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="">
+                                <div class="accordion__title">Создаем дизайн</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_3">
+                                <p>Не знаете какую прическу выбрать? Не можете определиться с цветом полов в вашем любовном гнездышке? Мы знаем то, что вам понравится. Уж в чем-чем, но вот в чувстве стиля нам нет равных.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.accordion -->
+
+                </div><!-- /.wedo__item -->
+            </div><!-- /.wedo -->
+
+        </div>
+    </section>
+
+
+    <!-- Team -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Кто же мы</h3>
+                <h2 class="section__title">Познакомьтесь с командой</h2>
+                <div class="section__text">
+                    <p>Мы всего-лишь группа друзей, ничем не обязанных друг другу, но нам приятно проводить время вместе. По раздельности мы совсем не специалисты, но вместе мы свернем горы.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/41.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">ChOne</div>
+                        <div class="card__prof">Музыкант</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/ELyeah.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">EL_yeah</div>
+                        <div class="card__prof">Писатель</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/dadlik.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Val Artman</div>
+                        <div class="card__prof">Графический дизайнер</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/shmen.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Shmen</div>
+                        <div class="card__prof">Душа компании</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/BigMark.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Big_Mark</div>
+                        <div class="card__prof">Хэйтер</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/sglipa.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Сглыпа </div>
+                        <div class="card__prof">Креативный директор</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+            </div><!-- /.card -->
+
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- Works -->
+    <section class="section" id="works">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Что мы сделаем?</h3>
+                <h2 class="section__title">Некоторые наши работы</h2>
+                <div class="section__text">
+                    <p>Ваша работа может быть сделана нами, да еще и в надлежащем качестве, если вы, конечно, готовы потратить на нас свое время и деньги</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/1.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Создаем логотипы</div>
+                        <div class="works__text">наши логотипы подходят под любой бренд</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/2.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Ресуем смешные картинки</div>
+                        <div class="works__text">диджитал работы от прославленного художника</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/3.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Угарные мемы</div>
+                        <div class="works__text">наш бот Сглыпа регулярно делает смешно</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/4.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Провакационные</div>
+                        <div class="works__text">Нам не важно какую работу выполнять</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/5.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Вовлеченность</div>
+                        <div class="works__text">Мы делаем работы с любовью</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/6.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Альбом</div>
+                        <div class="works__text">Музыка наших участников заставит вас страдать</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/7.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Обработка фотографий</div>
+                        <div class="works__text">Знаем все основы фотошопа</div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.works -->
+    </section>
+
+
+    <!-- Reviews -->
+    <div class="section">
+        <div class="container">
+
+            <div class="reviews">
+
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatars/dadlik.jpg" alt="">
+                            <div class="reviews__text">“Не так важно сколько у тебя крыс - куда важнее что они смогут с тобой сделать”</div>
+                            <div class="reviews__author">RockyDowdle</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatars/41.jpg" alt="">
+                            <div class="reviews__text">“Однажды, проснувшись, я сказал, что мне нравиться быть проснутым... С тех пор я больше не говорил”</div>
+                            <div class="reviews__author">Чван</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatars/shmen.jpg" alt="">
+                            <div class="reviews__text">“Люблю своих друзей”</div>
+                            <div class="reviews__author">Шмен</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatars/BigMark.jpg" alt="">
+                            <div class="reviews__text">“Ты нищий сын бляди я бы тебя нахуй порезал долбоёб ты сын проститутки просто конченый отсталый дегенерат”</div>
+                            <div class="reviews__author">Big Mark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__col  footer__col--first">
+                    <div class="footer__logo">OJ</div>
+                    <div class="footer__text">Настоятельно просим вас не оставлять заявки, если вы не готовы долго говорить о требуемом результате, нам очень важно, чтобы каждый клиент остался доволен продуктом. Спасибо за понимание.</div>
+
+                    <div class="footer__social">
+                        <div class="footer__social-header">
+                            <b>15k</b> подписчиков
+                        </div>
+                        <div class="footer__social-content">
+                            Следите за нами:
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="subscribe" action="/" method="post">
+                        <input class="subscribe__input" type="email" name="name" placeholder="Ваш Email...">
+                        <button class="subscribe__btn" type="submit">Подписаться</button>
+                    </form>
+                </div><!-- /.footer__col -->
+
+            </div><!-- /.footer__inner -->
+
+            <div class="copyright">
+                © 2023 OJ бесплатный пробный проект за авторством <span>Drumo</span>
+            </div>
+
+        </div><!-- /.container -->
+    </footer>
+
+</div><!-- /.page -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
